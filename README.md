@@ -1,31 +1,31 @@
-# analise-pyspark
+# pyspark-analysis
  
-Objetivos:
-O objetivo do projeto foi explorar os dados de amostra disponíveis no IMDB usando o Apache Spark e a API de Dataframes do Spark. Foi realizada uma análise exploratória dos dados para responder a algumas perguntas sobre os filmes, como gênero de títulos mais frequente, quantidade de títulos de filmes diferentes, duração média dos filmes com conteúdo adulto, quantidade de filmes com título atual diferente do título original, nome mais longo de filme, filme com a maior quantidade de votos e a menor nota média de um filme.
+Objectives:
+The objective of the project was to explore the available sample data from IMDB using Apache Spark and Spark's Dataframes API. Exploratory data analysis was performed to answer questions about movies, such as the most frequent genre of titles, the number of different movie titles, the average duration of adult content movies, the number of movies with current title different from the original title, the longest movie title, the movie with the highest number of votes, and the lowest average rating of a movie.
 
-Análise:
-Para realizar a análise dos dados, os arquivos "title_basics.tsv" e "title_ratings.tsv" foram lidos usando a API de Dataframes do Spark. Em seguida, foram realizadas as seguintes análises:
+Analysis:
+To perform the data analysis, the "title_basics.tsv" and "title_ratings.tsv" files were read using Spark's Dataframes API. Then, the following analyses were conducted:
 
-Qual o gênero de títulos mais frequente?
-Para responder a essa pergunta, foi criado um novo dataframe agrupando os dados por gênero e contando o número de títulos em cada gênero. Em seguida, os dados foram ordenados em ordem decrescente para encontrar o gênero mais frequente.
+What is the most frequent genre of titles?
+To answer this question, a new dataframe was created by grouping the data by genre and counting the number of titles in each genre. Then, the data was sorted in descending order to find the most frequent genre.
 
-Quantos títulos de filmes diferentes existem?
-Foi criado um novo dataframe contendo apenas os títulos únicos dos filmes e, em seguida, foi contado o número de títulos no dataframe.
+How many different movie titles exist?
+A new dataframe was created containing only the unique movie titles, and then the number of titles in the dataframe was counted.
 
-Qual a duração média dos filmes com conteúdo adulto?
-Foi criado um novo dataframe contendo apenas os filmes com classificação etária de "adulto" e, em seguida, foi calculada a duração média desses filmes.
+What is the average duration of adult content movies?
+A new dataframe was created containing only the movies with an "adult" age rating, and then the average duration of these movies was calculated.
 
-Quantos filmes têm o título atual (“primary”) diferente do título original?
-Foi criado um novo dataframe contendo apenas os filmes cujo título atual é diferente do título original e, em seguida, foi contado o número de filmes no dataframe.
+How many movies have the current title different from the original title?
+A new dataframe was created containing only the movies whose current title is different from the original title, and then the number of movies in the dataframe was counted.
 
-Qual o filme que tem o nome mais longo?
-Foi criado um novo dataframe ordenando os dados por comprimento do título em ordem decrescente e, em seguida, o primeiro registro no dataframe foi selecionado para obter o nome do filme mais longo.
+Which movie has the longest title?
+A new dataframe was created by sorting the data by title length in descending order, and then the first record in the dataframe was selected to obtain the longest movie title.
 
-Qual filme tem a maior quantidade de votos?
-Foi criado um novo dataframe ordenando os dados por quantidade de votos em ordem decrescente e, em seguida, o primeiro registro no dataframe foi selecionado para obter o filme com a maior quantidade de votos.
+Which movie has the highest number of votes?
+A new dataframe was created by sorting the data by the number of votes in descending order, and then the first record in the dataframe was selected to obtain the movie with the highest number of votes.
 
-Qual é a menor nota média de um filme?
-Foi criado um novo dataframe contendo apenas os filmes com nota média atribuída e, em seguida, foi calculada a nota média mínima desses filmes.
+What is the lowest average rating of a movie?
+A new dataframe was created containing only the movies with an assigned average rating, and then the minimum average rating of these movies was calculated.
 
-Conclusão:
-O projeto usou a API de Dataframes do Spark para explorar os dados de amostra disponíveis no IMDB. A análise dos dados permitiu responder às perguntas sobre os filmes e extrair informações relevantes sobre o conjunto de dados. A utilização do Spark permitiu que a análise fosse executada de forma rápida e escalável, mesmo para arquivos de tamanho grande.
+Conclusion:
+The project used Spark's Dataframes API to explore the available sample data from IMDB. Data analysis allowed for answering questions about movies and extracting relevant information from the dataset. The use of Spark allowed for quick and scalable analysis, even for large-sized files.
