@@ -28,4 +28,4 @@ Qual é a menor nota média de um filme?
 Foi criado um novo dataframe contendo apenas os filmes com nota média atribuída e, em seguida, foi calculada a nota média mínima desses filmes.
 
 Conclusão:
-O projeto usou a API de Dataframes do Spark para explorar os dados de amostra disponíveis no IMDB. A análise dos dados permitiu responder às perguntas sobre os filmes e extrair informações relevantes sobre o conjunto de dados. A utilização do Spark permitiu que a análise fosse executada de forma rápida e escalável, mesmo para arquivos de tamanho grande, como os utilizados neste projeto.
+O projeto usou a API de Dataframes do Spark para explorar os dados de amostra disponíveis no IMDB. A análise dos dados permitiu responder às perguntas sobre os filmes e extrair informações relevantes sobre o conjunto de dados. A utilização do Spark permitiu que a análise fosse executada de forma rápida e escalável, mesmo para arquivos de tamanho grande.
